@@ -1,0 +1,24 @@
+GET     /register                           controllers.Assets.at(path="/public/html", file = "register.html")
+GET     /login                               controllers.Assets.at(path="/public/html", file="login.html")
+GET     /test                                controllers.Assets.at(path="/public/html", file="test.html")
+
+GET     /register-style                               controllers.Assets.at(path="/public/stylesheets", file="register-style.css")
+GET     /normalize                              controllers.Assets.at(path="/public/stylesheets", file="normalize.css")
+GET     /login-style                            controllers.Assets.at(path="/public/stylesheets", file="login-style.css")
+
+
+GET     /javascripts/jquery                 controllers.Assets.at(path="/public/javascripts", file="jquery.js")
+GET     /javascripts/register                 controllers.Assets.at(path="/public/javascripts", file="register.js")
+GET     /javascripts/login                      controllers.Assets.at(path="/public/javascripts", file="login.js")
+GET     /javascripts/logout                     controllers.Assets.at(path="/public/javascripts", file="logout.js")
+
+
+GET     /logout                                 controllers.LogoutService.logout
+
+POST    /save                                controllers.RegistrationService.save
+POST    /doLogin                               controllers.LoginService.doLogin
+POST    /checkSecretMessage                     controllers.SecretMessageService.checkSecretMessage
+
+
+
+

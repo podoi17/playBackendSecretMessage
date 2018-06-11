@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="register-style"/>
+    <link rel="stylesheet" href="normalize"/>
+    <title>Registration</title>
+</head>
+<body>
+    <div class="page" id="register" aria-hidden="false">
+        <div class="register-container">
+            <header class="register-header">
+                <h1>Hey There!</h1>
+                <p>Wanna sign up? ;)</p>
+            </header>
+            <form class="register-form" method="POST" action="/">
+                <fieldset class="register-fieldset">
+                    <input id="email" class="register-items" type="text" placeholder="email">
+                    <input id="username" class="register-items" type="text" placeholder="username">
+                    <input id="pwd" class="register-items" type="password" placeholder="password">
+                </fieldset>
+                <button class="submitButtonRegister">Submit</button>
+                <p id="failRegister" hidden>Wrong email or User already exists</p>
+            </form>
+        </div>
+    </div>
+    <div class="page" id="successfull-register" aria-hidden="true">
+        <h1>Hey you have successfully registerd</h1>
+    </div>
+    <div class="page" id="fail-register" aria-hidden="true">
+        <h1>Please Return, something went wrong</h1>
+    </div>
+
+<script src="javascripts/register"></script>
+<script src="javascripts/jquery"></script>
+</body>
+</html>

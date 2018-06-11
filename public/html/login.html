@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="login-style"/>
+    <link rel="stylesheet" href="normalize"/>
+    <title>Login</title>
+</head>
+<body>
+<div class="page" id="login" aria-hidden="false">
+    <div class="login-container">
+        <header class="login-header">
+            <h1>Hey There!</h1>
+            <p>Please login into Your Account</p>
+        </header>
+        <form class="login-form" method="POST" action="/">
+            <fieldset class="login-fieldset">
+                <input id="email" class="login-items" type="text" placeholder="email">
+                <input id="pwd" class="login-items" type="password" placeholder="password">
+            </fieldset>
+            <a class="register-link" href="/register">Need To Register?</a>
+            <button class="submitButtonLogin">Submit</button>
+            <p id="failParagraph" hidden>Something went wrong</p>
+        </form>
+    </div>
+</div>
+<div class="page" id="login-successfull" aria-hidden="true">
+    <h1>Welcome back</h1>
+    <label class="secret-message-label"></label>
+    <label class="secret-message-status"></label>
+    <button class="checkMessageButton">Check My Message</button>
+    <a class="profile-link" href="/test">Manage my Profile</a>
+    <a class="reload-page" href="">Reload</a>
+</div>
+
+<script src="javascripts/login"></script>
+<script src="javascripts/jquery"></script>
+</body>
+</html>
